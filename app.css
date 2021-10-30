@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 10px;
+}
+::-moz-selection { /* Code for Firefox */
+    background-color: var(--main-color);
+  }
+::selection {
+    background-color: var(--main-color);
+  }
+
+body {
+    margin: 0;
+}
+/*---VARIABLE---*/
+:root {
+    --main-color: #00E697;
+    --main-color-dark: #00CD86;
+    --secondary-color: '';
+    --text-color-dark:#212429;
+    --text-color-middle: #495057;
+    --text-color-light: #a7a7a7;
+    --shadow: 0px 10px 15px 13px rgba(0, 0, 0, 0.24);
+    /*Typography*/
+    --huge-text: 50px;
+    --big-text: 38px;
+    --medium-text: 28px;
+    --small-text: 21px;
+    --smallest-text: 12px;
+    --paragraph: 16px;
+    /*Radius*/
+    --main-radius: 18px;
+    /*input*/
+    --default-border: 1px solid var(--text-color-light);
+    /*border radius*/
+    --radius: 7px;
+}
+/*---TYPOGRAPHY---*/
+h1 {
+    font-size: 4.4rem;
+    font-weight: 800;
+}
+h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+h3 {
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+h4 {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+p {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+h5, h6 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+/*---BUTTONS---*/
+button {
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: var(--radius);
+    padding: 5px 22px;
+    font-size: var(--paragraph);
+    transition: 0.3s background-color;
+}
+button:hover {
+    background-color: var(--main-color-dark);
+}
+button:active {
+    background-color: #00ac70;
+}
+*:focus {
+    outline-style:solid;  
+    outline-width: 4px;
+    outline-color: rgba(60, 240, 150, 0.2);
+    outline-offset: 0px;
+}
+.btn-secondary {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 5px 22px;
+    font-size: var(--paragraph);
+}
+.btn-secondary:active, .btn-secondary:hover {
+    background-color: transparent;
+}
+input {
+    height: 40px;
+    width: 100%;
+    max-width: 300px;
+    border: var(--default-border);
+    border-radius: var(--radius);
+    padding-left: 8px;
+}
